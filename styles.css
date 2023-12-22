@@ -5,7 +5,10 @@ body, html {
     height: 100%;
     text-align: center;
     font-family: cursive;
+    overflow-y: scroll;
+    
 }
+
 
 .background{
     position: absolute;
@@ -20,7 +23,6 @@ body, html {
 .butterfly-container {
     position: absolute;
     top: 0%;
-    transform: translateY(-50%);
     
 }
 
@@ -38,33 +40,39 @@ body, html {
     left: 40%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     h1{
-        color: rgb(25, 69, 7);
+        color: rgb(25, 65, 10);
     }
     h2{
-        color: rgb(98, 60, 26);
+        color: rgb(85, 51, 21);
     }
 
 }
 .butterfly-icon {
     position: absolute;
     top: 72%;
-    left: 40%;
-    
+    left: 40%;  
 }
 
-.butterfly-icon2 {
+.butterfly-icon2{
     position: absolute;
     top: 72%;
     left: 49%;
-   
-
 }
 
 .butterfly-icon3{
     position: absolute;
     top: 72%;
-    left: 58%;
-    
+    left: 58%;  
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease; 
+}
+
+a:hover{
+    color: rgb(28, 175, 150);
 }
 
 
@@ -76,6 +84,48 @@ body, html {
         left: calc(100vw + 50px);
     }
 }
+
+.profile {
+    position: absolute;
+    top: 100%;
+    height: 150%;
+    width: 100%;
+    
+    
+}
+.profile section{
+    position: absolute;
+    top: 7%;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    left: 680px;
+    width: 500px;
+    text-align: left;
+    background-color: black;
+    opacity: 0.8;
+    color: #f4f4f4;
+}
+
+.profile img {
+    position: absolute;
+    top: 4%;
+    left: 290px;
+    height: 290px;
+    width: 300px;
+    border-radius: 50%;
+    border: 4px solid black;
+    
+}
+
+.project-section {
+    position: absolute;
+    background-color: #f4f4f4;
+    top: 150%; 
+    height: 100%; 
+    width: 100%;
+    text-align: center;
+}
+
 
 
 
