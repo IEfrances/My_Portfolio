@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+    font-family: cursive;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.butterfly-container {
+    position: absolute;
+    top: 0%;
+    transform: translateY(-50%);
+    
+}
+
+.butterfly {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: butterflyMove 10s linear infinite;
+    opacity: 0.6;
+}
+
+.intro { 
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    h1{
+        color: rgb(25, 69, 7);
+    }
+    h2{
+        color: rgb(98, 60, 26);
+    }
+
+}
+.butterfly-icon {
+    position: absolute;
+    top: 72%;
+    left: 40%;
+    
+}
+
+.butterfly-icon2 {
+    position: absolute;
+    top: 72%;
+    left: 49%;
+   
+
+}
+
+.butterfly-icon3{
+    position: absolute;
+    top: 72%;
+    left: 58%;
+    
+}
+
+
+@keyframes butterflyMove {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: calc(100vw + 50px);
+    }
+}
+
+
+
