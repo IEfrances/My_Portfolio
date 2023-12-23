@@ -20,9 +20,36 @@ body, html {
     opacity: 0.4;
 }
 
+/*intro animation*/
+.intro { 
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0;
+    transform: translateX(-50px); 
+    animation: slideIn 1s ease-out forwards;
+    h1{
+        color: rgb(25, 65, 10);
+    }
+    h2{
+        color: rgb(85, 51, 21);
+    }
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+
+
+/*butterfly animation and icons*/
 .butterfly-container {
     position: absolute;
     top: 0%;
+    transform: translateY(-50%);
     
 }
 
@@ -34,23 +61,12 @@ body, html {
     opacity: 0.6;
 }
 
-.intro { 
-    position: absolute;
-    top: 35%;
-    left: 40%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    h1{
-        color: rgb(25, 65, 10);
-    }
-    h2{
-        color: rgb(85, 51, 21);
-    }
 
-}
 .butterfly-icon {
     position: absolute;
     top: 72%;
-    left: 40%;  
+    left: 40%;
+  
 }
 
 .butterfly-icon2{
@@ -62,9 +78,21 @@ body, html {
 .butterfly-icon3{
     position: absolute;
     top: 72%;
-    left: 58%;  
+    left: 58%;
+    
 }
 
+@keyframes butterflyMove {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: calc(100vw + 50px);
+    }
+}
+
+
+/*cursor hover colour change*/
 a{
     text-decoration: none;
     color: black;
@@ -76,14 +104,29 @@ a:hover{
 }
 
 
-@keyframes butterflyMove {
-    0% {
-        left: -100px;
-    }
-    100% {
-        left: calc(100vw + 50px);
+/*wolf animation*/
+.moving-animal {
+    position: absolute;
+    top: 100%;
+    opacity: 0.6;
+    animation: animal-run 4s linear infinite;
+    img{
+        height: 340px;
+        width: 600px;
     }
 }
+
+@keyframes animal-run {
+    0% {
+        right: -100px;
+    }
+    100% {
+        right: calc(100vw + 50px);
+    }
+}
+
+
+/*profile section*/
 
 .profile {
     position: absolute;
@@ -97,7 +140,7 @@ a:hover{
     position: absolute;
     top: 7%;
     padding-left: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     left: 680px;
     width: 500px;
     text-align: left;
@@ -114,17 +157,66 @@ a:hover{
     width: 300px;
     border-radius: 50%;
     border: 4px solid black;
-    
 }
 
+/*project section*/
 .project-section {
     position: absolute;
-    background-color: #f4f4f4;
+    background-color:#d6d5d5;
     top: 150%; 
-    height: 100%; 
+    height: 200%; 
     width: 100%;
     text-align: center;
-}
+
+    h3{
+        font-family: 'Permanent Marker', cursive;
+        font-size: 30px;
+        color: #f4f4f4;
+
+    a{
+        text-decoration: none;}
+
+    }
+
+    .proj-1{
+        background-color:rgb(125, 162, 160);
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        height: 40%; 
+        width: 30%;
+        border-radius: 5%;
+
+        img{
+            height: 40%; 
+            width: 55%;
+        }
+
+        p{
+            font-size: 18px;
+            background-color: white;
+            opacity: 0.7;
+            margin: 26px;
+            padding-left: 20px;
+            padding-top: 30px;
+            padding-right: 20px;
+            width: 80%;
+            height: 28%;
+            text-align: left;
+            border-radius: 5%;   
+        }
+     }
+
+    .proj-2{
+        background-color:rgb(138, 152, 105);
+        position: absolute;
+        top: 30%;
+        left: 55%;
+        height: 30%; 
+        width: 40%;
+        }
+ }
+
 
 
 
