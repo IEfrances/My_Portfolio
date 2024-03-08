@@ -5,7 +5,7 @@ body, html {
     height: 100%;
     text-align: center;
     font-family: cursive;
-    overflow-y: scroll;
+    overflow-y: auto;
     
 }
 
