@@ -18,3 +18,4 @@ function showSlides() {
     const transformValue = -currentSlide * 167 + '%';
     slides.style.transform = 'translateX(' + transformValue + ')';
 }
+

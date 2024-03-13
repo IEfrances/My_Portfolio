@@ -5,9 +5,9 @@ body, html {
     height: 100%;
     text-align: center;
     font-family: cursive;
-    overflow-y: auto;
-    
+    overflow-y: auto;  
 }
+
 
 
 .background{
@@ -18,6 +18,8 @@ body, html {
     height: 100%;
     object-fit: cover;
     opacity: 0.4;
+    background-color: black;
+    
 }
 
 /*intro animation*/
@@ -149,6 +151,13 @@ a:hover{
     color: #f4f4f4;
 }
 
+.profile section a {
+    display: inline-block;
+    margin-left: 10px; 
+    color: #f4f4f4;
+    font-size: 30px;
+}
+
 .profile img {
     position: absolute;
     top: 4%;
@@ -159,12 +168,30 @@ a:hover{
     border: 4px solid black;
 }
 
+
+
 /*project section*/
+.extra-space{    
+    position: absolute; 
+    top: 150%; 
+    height: 100%; 
+    width: 100%;
+    background-color: #d6d5d5;
+
+}
+
+
+.project-section h1{
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 0.1%;
+    font-size: 50px;
+}
+
 .project-section {
     position: absolute;
     background-color:#d6d5d5;
-    top: 150%; 
-    height: 200%; 
+    top: 185%; 
+    height: 190%; 
     width: 100%;
     text-align: center;
 
@@ -178,11 +205,12 @@ a:hover{
 
     }
 
+
     .proj-1{
         background-color:rgb(125, 162, 160);
         position: absolute;
-        top: 30%;
-        left: 5%;
+        top: 9.8%;
+        left: 10%;
         height: 40%; 
         width: 30%;
         border-radius: 5%;
@@ -210,10 +238,31 @@ a:hover{
     .proj-2{
         background-color:rgb(138, 152, 105);
         position: absolute;
-        top: 30%;
-        left: 55%;
-        height: 30%; 
-        width: 40%;
+        top: 9.8%;
+        left: 60%;
+        height: 40%; 
+        width: 30%;
+        border-radius: 5%;
+
+        img{
+            height: 40%; 
+            width: 55%;
+        }
+
+        p{
+            font-size: 18px;
+            background-color: white;
+            opacity: 0.7;
+            margin: 26px;
+            padding-left: 20px;
+            padding-top: 30px;
+            padding-right: 20px;
+            width: 80%;
+            height: 28%;
+            text-align: left;
+            border-radius: 5%;   
+        }
+
         }
  }
 
