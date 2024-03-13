@@ -191,7 +191,7 @@ a:hover{
     position: absolute;
     background-color:#d6d5d5;
     top: 185%; 
-    height: 190%; 
+    height: 150%; 
     width: 100%;
     text-align: center;
 
@@ -206,12 +206,13 @@ a:hover{
     }
 
 
+
     .proj-1{
         background-color:rgb(125, 162, 160);
         position: absolute;
-        top: 9.8%;
+        top: 16%;
         left: 10%;
-        height: 40%; 
+        height: 50%; 
         width: 30%;
         border-radius: 5%;
 
@@ -238,9 +239,9 @@ a:hover{
     .proj-2{
         background-color:rgb(138, 152, 105);
         position: absolute;
-        top: 9.8%;
+        top: 16%;
         left: 60%;
-        height: 40%; 
+        height: 50%; 
         width: 30%;
         border-radius: 5%;
 
@@ -265,6 +266,14 @@ a:hover{
 
         }
  }
+
+ .project-section h4 {
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(104, 26, 26);
+}
 
 
 
